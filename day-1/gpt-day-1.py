@@ -4,7 +4,7 @@ max_calories_elf = 0
 current_calories = 0
 
 # Read input from file
-with open("day1.txt", "r") as file:
+with open("day-1/day1.txt", "r") as file:
     for line in file:
         line = line.strip()  # Remove leading and trailing whitespaces
         if not line:

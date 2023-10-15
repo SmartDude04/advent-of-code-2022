@@ -1,5 +1,5 @@
 # Opening the file and storing it in a variable
-file = open("day2.txt", "r")
+file = open("day-2/day2.txt", "r")
 # Making lines variable an array of the lines
 lines = file.readlines()
 
