@@ -1,6 +1,6 @@
 # Opening the file and storing it in a variable
 # file = open("day-5/day5.txt", "r")
-file = open("day-5/day5-snippet.txt", "r")
+file = open("day-5/day5.txt", "r")
 # Making lines variable an array of the lines
 lines = file.readlines()
 
@@ -58,4 +58,4 @@ print(initial_stack)
 start_point = len(old_initial_stack) + 2
 move_list = lines[start_point:]
 
-# Parse the move list and get just the numbers needed
+# Parse the move list and get just the numbers needed and put them in an array of arrays
