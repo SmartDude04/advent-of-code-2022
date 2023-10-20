@@ -76,10 +76,19 @@ for move in move_commands:
     from_row = move[1]
     to_row = move[2]
     
+    move_crates = []
+    
     # Loop for as many items as we need
     for i in range(move[0]):
         item = crates[from_row - 1].pop()
-        crates[to_row - 1].append(item)
+        # crates[to_row - 1].append(item)
+        move_crates.append(item)
+    
+    move_crates.reverse()
+    
+    for crate in move_crates:
+        crates[to_row - 1].append(crate)
+        
 
 top_boxes = ""
 for row in crates:
