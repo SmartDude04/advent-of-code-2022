@@ -6,19 +6,17 @@ folders = []
 class Folder:
     
     size = 0
-    parent_folder = "/"
-    files = []
-    folders = []
     
     # Init function, also compute size of the folder
-    def __init__(self, parent_folder, files, folders) -> None:
+    def __init__(self, name, parent_folder, files, folders) -> None:
+        self.name = name
         self.parent_folder = parent_folder
         self.files = files
         self.folders = folders
         
-    # Return the size of the folder
-    def get_size(self) -> int:
-        return self.size
+        # Compute size of *files inside folder*
+        
+        
     
     # Get the index in the folder array of the parent folder so a lookup can be performed
     def find_parent_folder_index(self) -> int:
@@ -27,9 +25,8 @@ class Folder:
                 return i
 
         return -1
+
     
 
 
 #def build_folder(command_line_num):
-
-tester = Folder("var", 3, 5)
